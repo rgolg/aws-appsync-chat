@@ -1,8 +1,11 @@
-// eslint-disable
+/* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createUser = `mutation CreateUser($input: CreateUserInput!) {
-  createUser(input: $input) {
+export const createUser = `mutation CreateUser(
+  $input: CreateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  createUser(input: $input, condition: $condition) {
     id
     username
     conversations {
@@ -31,8 +34,11 @@ export const createUser = `mutation CreateUser($input: CreateUserInput!) {
   }
 }
 `;
-export const updateUser = `mutation UpdateUser($input: UpdateUserInput!) {
-  updateUser(input: $input) {
+export const updateUser = `mutation UpdateUser(
+  $input: UpdateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  updateUser(input: $input, condition: $condition) {
     id
     username
     conversations {
@@ -61,8 +67,11 @@ export const updateUser = `mutation UpdateUser($input: UpdateUserInput!) {
   }
 }
 `;
-export const deleteUser = `mutation DeleteUser($input: DeleteUserInput!) {
-  deleteUser(input: $input) {
+export const deleteUser = `mutation DeleteUser(
+  $input: DeleteUserInput!
+  $condition: ModelUserConditionInput
+) {
+  deleteUser(input: $input, condition: $condition) {
     id
     username
     conversations {
@@ -91,8 +100,11 @@ export const deleteUser = `mutation DeleteUser($input: DeleteUserInput!) {
   }
 }
 `;
-export const createConvo = `mutation CreateConvo($input: CreateConversationInput!) {
-  createConvo(input: $input) {
+export const createConvo = `mutation CreateConvo(
+  $input: CreateConversationInput!
+  $condition: ModelConversationConditionInput
+) {
+  createConvo(input: $input, condition: $condition) {
     id
     messages {
       items {
@@ -122,8 +134,11 @@ export const createConvo = `mutation CreateConvo($input: CreateConversationInput
   }
 }
 `;
-export const createMessage = `mutation CreateMessage($input: CreateMessageInput!) {
-  createMessage(input: $input) {
+export const createMessage = `mutation CreateMessage(
+  $input: CreateMessageInput!
+  $condition: ModelMessageConditionInput
+) {
+  createMessage(input: $input, condition: $condition) {
     id
     author {
       id
@@ -158,8 +173,11 @@ export const createMessage = `mutation CreateMessage($input: CreateMessageInput!
   }
 }
 `;
-export const updateMessage = `mutation UpdateMessage($input: UpdateMessageInput!) {
-  updateMessage(input: $input) {
+export const updateMessage = `mutation UpdateMessage(
+  $input: UpdateMessageInput!
+  $condition: ModelMessageConditionInput
+) {
+  updateMessage(input: $input, condition: $condition) {
     id
     author {
       id
@@ -194,8 +212,11 @@ export const updateMessage = `mutation UpdateMessage($input: UpdateMessageInput!
   }
 }
 `;
-export const deleteMessage = `mutation DeleteMessage($input: DeleteMessageInput!) {
-  deleteMessage(input: $input) {
+export const deleteMessage = `mutation DeleteMessage(
+  $input: DeleteMessageInput!
+  $condition: ModelMessageConditionInput
+) {
+  deleteMessage(input: $input, condition: $condition) {
     id
     author {
       id
@@ -230,8 +251,11 @@ export const deleteMessage = `mutation DeleteMessage($input: DeleteMessageInput!
   }
 }
 `;
-export const createConvoLink = `mutation CreateConvoLink($input: CreateConvoLinkInput!) {
-  createConvoLink(input: $input) {
+export const createConvoLink = `mutation CreateConvoLink(
+  $input: CreateConvoLinkInput!
+  $condition: ModelConvoLinkConditionInput
+) {
+  createConvoLink(input: $input, condition: $condition) {
     id
     user {
       id
@@ -265,8 +289,11 @@ export const createConvoLink = `mutation CreateConvoLink($input: CreateConvoLink
   }
 }
 `;
-export const updateConvoLink = `mutation UpdateConvoLink($input: UpdateConvoLinkInput!) {
-  updateConvoLink(input: $input) {
+export const updateConvoLink = `mutation UpdateConvoLink(
+  $input: UpdateConvoLinkInput!
+  $condition: ModelConvoLinkConditionInput
+) {
+  updateConvoLink(input: $input, condition: $condition) {
     id
     user {
       id
